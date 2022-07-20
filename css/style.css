@@ -51,6 +51,7 @@ a{
 
 :root{
     --primary-color: #161616;
+    --primary-color-2: rgb(22, 22, 22, 70%);
     --secondary-color: #DD0000;
     --text-color-1: #B9B9B9;
     --white: #FFFFFF;
@@ -75,6 +76,7 @@ h4{
     font-size: 1.8rem;
     font-weight: 600;
     color: var(--primary-color);
+    margin-bottom: 1.5rem;
 }
 
 p{
@@ -103,6 +105,61 @@ img{
     display: inline-block;
 }
 
+.btn-inActive:link,
+.btn-inActive:visited,
+.btn-inActive{
+    background: var(--white);
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1.6rem 0;
+    border-radius: 1rem;
+    width: 25.2rem;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-Active{
+    background: var(--secondary-color)!important;
+    color: var(--white)!important;
+}
+
+/* Blog Cards */
+
+.card{
+    max-width: 31.2rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    border-radius: 1rem;
+}
+
+.card .card-details{
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+.card .card-details .btn-transfer{
+    border: .1rem solid var(--primary-color-2);
+    padding: .4rem .9rem;
+    border-radius: .5rem;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: .7rem 0;
+    display: inline-block;
+}
+
+.card .card-details .blog-history a {
+    color: var(--primary-color-2);
+    font-size: 1.6rem;
+    margin-right: 2rem;
+    
+}
+
+.card .card-details .blog-history a:last-child{
+    margin-right: 0;
+}
+
+
 /* ====== Start Header Section Design ====== */
 
 .header-items{
@@ -120,6 +177,46 @@ img{
 
 .header-items .header-left p:nth-child(4){
     margin-bottom: 3rem;
+}
+
+/* ====== Start Blog Section Design ====== */
+
+.blog-items{
+    display: grid;
+    grid-template-columns: 33rem auto;
+    justify-content: space-between;
+    margin-top: 10rem;
+    padding-bottom: 8rem;
+}
+
+.blog-items .blog-navigator-btn{
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    width: 31.2rem;
+    height: 33rem;
+}
+
+.blog-items .blog-navigator-btn ul{
+    flex-direction: column;
+}
+
+.blog-items .blog-navigator-btn ul li{
+    margin-bottom: 3rem;
+}
+
+.blog-items .blog-navigator-btn ul li:last-child{
+    margin-bottom: 0rem;
+}
+
+.blog-items .blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 31.2rem);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
 }
 
 
