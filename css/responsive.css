@@ -1,0 +1,312 @@
+
+/* ==== Start Responsive Design ==== */
+
+@media only screen and (max-width : 1200px) {
+    .container{
+        max-width: 120rem;
+        
+    }
+    
+    .row{
+        max-width: 114rem;
+        margin: 0 auto;
+    }
+
+    .blog-items{
+        grid-template-columns: auto auto;
+    }
+
+    .blog-items .blogs{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card{
+        max-width: 25rem;
+    }
+}
+
+
+@media only screen and (max-width : 992px) {
+
+    html{
+        font-size: 57.5%;
+        line-height: 1.1;
+    }
+
+    
+    h1{
+        font-size: 4.5rem;
+        margin-bottom: .5rem;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+
+    h4{
+        font-size: 1.8rem;
+        margin: 2rem 0;
+    }
+
+    p{
+        font-size: 1.5rem;
+        line-height: 1.5;
+        margin: 1rem 0;
+
+    }
+
+    .container{
+        max-width: 99.2rem;
+        
+    }
+    
+    .row{
+        max-width: 90rem;
+        margin: 0 auto;
+    }
+
+    .blog-items{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+    }
+
+    .blog-items .blog-navigator-btn{
+        background: transparent;
+        width: 100%;
+        height: 10rem;
+        display: inline-block;
+    }
+    
+
+    .blog-items .blog-navigator-btn ul{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .blog-items .blog-navigator-btn ul li{
+        margin-bottom: 0;
+    }
+
+    .btn-inActive:link,
+    .btn-inActive:visited,
+    .btn-inActive{
+        width: 25rem;
+    }
+
+    .blog-items .blogs{
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .card{
+        max-width: 50rem;
+    }
+
+    .display-none{
+        display: block;
+    }
+
+    .display-none2{
+        display: none;
+    }
+
+    .footer-items .footer-menu{
+        width: 100%;
+        
+    }
+    
+    .footer-items .footer-menu ul{
+        grid-template-columns: repeat(4, auto);
+        justify-content: space-around;
+        row-gap: 2rem;
+    }
+    
+    .footer-items .footer-menu ul li a{
+        font-size: 1.6rem;
+    }
+
+}
+
+
+@media only screen and (max-width : 834px){
+    .container{
+        max-width: 83.4rem;
+        
+    }
+    
+    .row{
+        max-width: 78rem;
+        margin: 0 auto;
+    }
+
+    .header-items {
+        padding: 1rem 5rem 0 7rem;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+
+
+}
+
+@media only screen and (max-width : 768px){
+    .container{
+        max-width: 76.8rem;
+        
+    }
+    
+    .row{
+        max-width: 70rem;
+        margin: 0 auto;
+    }
+
+    .header-items {
+        padding: 1rem 4rem 0 5rem;
+    }
+
+    h1{
+        font-size: 3.5rem;
+    }
+
+    h4{
+        font-size: 1.6rem;
+    }
+
+    p{
+        font-size: 1.4rem;
+    }
+
+    .btn-inActive:link,
+    .btn-inActive:visited,
+    .btn-inActive{
+        width: 22rem;
+    }
+
+
+}
+
+
+@media only screen and (max-width : 576px){
+    .container{
+        max-width: 57.6rem;
+        
+    }
+    
+    .row{
+        max-width: 55rem;
+        margin: 0 auto;
+    }
+
+    .header-items{
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        border-radius: 1rem;
+    }
+
+    .header-items .header-left {
+        max-width: 30rem;
+        margin: 4rem auto;
+    }
+
+    .header-items .header-left p{
+        margin: 2rem 0;
+    }
+
+    .header-items .header-right{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    h4{
+        font-size: 1.6rem;
+    }
+
+    .blog-items{
+        margin-top: 0;
+    }
+
+    .blog-items .blog-navigator-btn{
+        height: auto;
+        margin-bottom: 3rem;
+    }
+
+    .blog-items .blog-navigator-btn ul{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .blog-items .blogs{
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .footer-items .footer-menu ul{
+        grid-template-columns: repeat(1, auto);
+    }
+
+}
+
+
+@media only screen and (max-width : 480px){
+
+    html{
+        font-size: 53.5%;
+    }
+
+    .container{
+        max-width: 48rem;
+        
+    }
+    
+    .row{
+        max-width: 44rem;
+        margin: 0 auto;
+    }
+
+    .header-items .header-right{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen and (max-width : 375px){
+
+    html{
+        font-size: 50.5%;
+    }
+
+    .container{
+        max-width: 37.5rem;
+        
+    }
+    
+    .row{
+        max-width: 35rem;
+        margin: 0 auto;
+    }
+
+    h1{
+        font-size: 2.2rem;
+    }
+
+    h4{
+        font-size: 1.8rem;
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+
+
+
+    
+}
+
+    
