@@ -56,6 +56,8 @@ a{
     --text-color-1: #B9B9B9;
     --white: #FFFFFF;
     --container-bg: #f8f9fa;
+    --hover-bg: #F2CA30;
+    --hover-bg-2: #06864D;
 }
 
 
@@ -87,7 +89,7 @@ p{
 }
 
 img{
-    width: 100%;
+    width: 100%; height: auto;
 }
 
 /* BUTON */
@@ -95,14 +97,21 @@ img{
 .btn:link,
 .btn:visited,
 .btn{
-    background: var(--secondary-color);
+    background: var(--hover-bg-2);
     color: var(--white);
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 600;
     padding: 1.6rem 2.5rem;
     border-radius: .5rem;
     cursor: pointer;
     display: inline-block;
+    transition: .7s;
+}
+
+
+.btn:hover{
+    background: var(--hover-bg);
+    color: var(--primary-color);
 }
 
 .btn-inActive:link,
@@ -118,10 +127,16 @@ img{
     display: inline-block;
     text-align: center;
     cursor: pointer;
+    transition: .7s;
+}
+
+.btn-inActive:hover{
+    background: var(--hover-bg-2)!important;
+    color: var(--white)!important;
 }
 
 .btn-Active{
-    background: var(--secondary-color)!important;
+    background: var(--hover-bg-2)!important;
     color: var(--white)!important;
 }
 
@@ -131,6 +146,16 @@ img{
     max-width: 31.2rem;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     border-radius: 1rem;
+    overflow: hidden;
+}
+
+.card img{
+    border-radius: 1rem 1rem 0 0;
+    transition: .5s;
+}
+
+.card img:hover{
+    transform: scale(1.1);
 }
 
 .card .card-details{
@@ -177,6 +202,26 @@ img{
 
 .header-items .header-left p:nth-child(4){
     margin-bottom: 3rem;
+}
+
+/* Header Animations */
+
+@keyframes float {
+    0% {
+      transform: translatey(0rem);
+    }
+    50% {
+      transform: translatey(-1.2rem);
+    }
+    100% {
+      transform: translatey(0rem);
+    }
+    
+  }
+
+.header-items .header-right img{
+    transform: translateY(0rem);
+    animation: float 6s ease-in-out infinite;
 }
 
 /* ====== Start Blog Section Design ====== */
@@ -284,7 +329,7 @@ img{
 }
 
 .footer-items .social-icons ul li a:hover i::before{
-    background: var(--secondary-color);
+    background: var(--hover-bg);
 }
 
 
