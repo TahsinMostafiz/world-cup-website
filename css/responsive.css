@@ -23,6 +23,12 @@
     .card{
         max-width: 25rem;
     }
+
+    .matches {
+        grid-template-columns: repeat(2, 31.2rem);
+        width: 70%;
+    }
+    
 }
 
 
@@ -102,6 +108,10 @@
 
     .card{
         max-width: 50rem;
+    }
+
+    .matches {
+        width: 100%;
     }
 
     .display-none{
@@ -243,6 +253,10 @@
     }
 
     .blog-items .blogs{
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .matches {
         grid-template-columns: repeat(1, auto);
     }
 
