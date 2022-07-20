@@ -1,0 +1,45 @@
+
+
+/* Upcoming Match Card Design */
+
+
+
+.matches {
+    display: grid;
+    grid-template-columns: repeat(3, 31.2rem);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.matches .match-card{
+    max-width: 31.2rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.matches .match-card .flag-align{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.matches .match-card .flag-align h5{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #161616;
+    margin: 0 1rem;
+}
+.matches .match-card .card-details h4{
+    margin-top: 3rem;
+}
+
+.matches .match-card .card-details h6{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #4D4D4D;
+    margin-bottom: 2rem;
+}
+
