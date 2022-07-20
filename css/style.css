@@ -331,7 +331,7 @@ img{
  }
 
  .footer-items .social-icons ul li a i::before{
-    background: rgb(255, 255, 255, 10%);
+    background: rgba(255, 255, 255, 10%);
     width: 1.5rem;
     height: 1.5rem;
     border-radius: 50%;
@@ -343,25 +343,3 @@ img{
 .footer-items .social-icons ul li a:hover i::before{
     background: var(--hover-bg);
 }
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
