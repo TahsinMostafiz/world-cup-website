@@ -219,5 +219,73 @@ img{
     align-items: center;
 }
 
+/* ====== Start Footer Section Design ====== */
+
+.footer-bg{
+    background: var(--primary-color);
+}
+
+.footer-items{
+    text-align: center;
+    padding: 5rem;
+}
+
+.footer-items h2{
+    border-bottom: .1rem solid rgba(255, 255, 255, 10%);
+    padding-bottom: 4rem;
+}
+
+.footer-items .footer-menu{
+    width: 70%;
+    margin: 4rem auto;
+}
+
+.footer-items .footer-menu ul{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-items .footer-menu ul li a{
+    font-size: 1.6rem;
+    color: var(--text-color-1);
+    font-weight: 600;
+}
+
+
+.footer-items .social-icons{
+    margin: 3rem 0;
+ }
+
+ .footer-items .social-icons ul{
+    justify-content: center;
+    align-items: center;
+ }
+
+ .footer-items .social-icons ul li{
+    margin-left: 1.5rem;
+ }
+
+ .footer-items .social-icons ul li:first-child{
+    margin-left: 0;
+ }
+
+ .footer-items .social-icons ul li a{
+    color: var(--white);
+ }
+
+ .footer-items .social-icons ul li a i::before{
+    background: rgb(255, 255, 255, 10%);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    transition: .3s;
+}
+
+.footer-items .social-icons ul li a:hover i::before{
+    background: var(--secondary-color);
+}
+
 
 
