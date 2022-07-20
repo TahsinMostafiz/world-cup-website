@@ -1,0 +1,126 @@
+/* ==================== */
+/* ====== RESET ======= */
+/* ==================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.2;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* ======= Resusable Components ======= */
+
+.container{
+    max-width: 160rem;
+    margin: 0 auto;
+    background-color: var(--container-bg);
+    padding-top: 3rem;
+}
+
+.row{
+    max-width: 132.1rem;
+    margin: 0 auto;
+}
+
+/* Colors */
+
+:root{
+    --primary-color: #161616;
+    --secondary-color: #DD0000;
+    --text-color-1: #B9B9B9;
+    --white: #FFFFFF;
+    --container-bg: #f8f9fa;
+}
+
+
+h1{
+    font-size: 7rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+h2{
+    font-size: 4rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+h4{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--white);
+    line-height: 1.6;
+}
+
+img{
+    width: 100%;
+}
+
+/* BUTON */
+
+.btn:link,
+.btn:visited,
+.btn{
+    background: var(--secondary-color);
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1.6rem 2.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* ====== Start Header Section Design ====== */
+
+.header-items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    background: var(--primary-color);
+    padding: 1rem 7rem 0 10rem;
+    border-radius: 3rem;
+}
+
+.header-items .header-left{
+    max-width: 53rem;
+}
+
+.header-items .header-left p:nth-child(4){
+    margin-bottom: 3rem;
+}
+
+
+
