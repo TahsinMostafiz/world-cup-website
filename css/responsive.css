@@ -28,6 +28,11 @@
         grid-template-columns: repeat(2, 31.2rem);
         width: 70%;
     }
+
+    .group-items{
+        grid-template-columns: repeat(3, 25rem);
+    }
+    
     
 }
 
@@ -159,6 +164,14 @@
         font-size: 4rem;
     }
 
+    .group-items{
+        grid-template-columns: repeat(2, 27rem);
+    }
+
+    .d-n{
+        display: none;
+    }
+
 
 }
 
@@ -286,6 +299,10 @@
     .header-items .header-right{
         width: 80%;
         margin: 0 auto;
+    }
+
+    .group-items{
+        grid-template-columns: repeat(1, 30rem);
     }
 
 }

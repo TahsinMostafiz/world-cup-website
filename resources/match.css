@@ -43,3 +43,99 @@
     margin-bottom: 2rem;
 }
 
+
+/* All Groups Card Design */
+
+.groups h2{
+    text-align: center;
+    color: #161616;
+    margin-bottom: 3rem;
+}
+
+.group-items{
+    display: grid;
+    grid-template-columns: repeat(4, 23rem);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.group-items .group-card{
+    border: .1rem solid rgba(22, 22, 22,10%);
+    
+}
+
+.group-items .group-card .border-bottom{
+    border-bottom: .1rem solid rgba(22, 22, 22,10%);
+    padding: 1rem 0 0 2rem; 
+}
+
+.group-items .group-card h4{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #161616;
+}
+
+.group-items .group-card .padding-inside{
+    padding: 1rem 0 0 2rem; 
+}
+
+.group-items .group-card .padding-inside h6{
+    font-size: 1.8rem;
+    color: rgba(22, 22, 22, 80%);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+/* Nike Ball Hub Section Design */
+
+.nike-ball-items{
+    display: flex;
+    height: 40rem;
+}
+
+.nike-ball-items .nike-ball-left{
+    flex: 30%;
+}
+
+.nike-ball-items .nike-ball-left .position-fixed{
+    position: relative;
+}
+.nike-ball-items .nike-ball-left .position-fixed img{
+    width: 40.9rem;
+    position: absolute;
+    top: -2rem;
+    right: -20rem;
+    z-index: 999;
+}
+
+.nike-ball-items .nike-ball-right{
+    flex: 70%;
+    background: #DD0000;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 25% 90%);
+}
+
+.nike-ball-items .nike-ball-right .right-items{
+    padding-top: 6rem;
+    margin-left: 23rem;
+}
+
+.nike-ball-items .nike-ball-right .right-items h4{
+    font-size: 4rem;
+    color: #FFFFFF;
+    font-weight: 700;
+}
+
+.nike-ball-items .nike-ball-right .right-items p{
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    font-weight: 400;
+    width: 80%;
+    margin-bottom: 4rem;
+}
+
+.nike-ball-items .nike-ball-right .right-items .btn-explore{
+    background: #FFFFFF ;
+    color: #DD0000;
+}
+
